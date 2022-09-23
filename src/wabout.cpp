@@ -154,7 +154,7 @@ void WAbout::CreateControls()
 		<font face='Arial, Helvetica, sans-serif' size='+1'> \
 		<img src='#DATA_PATH#/eviacam_logo.png' width='303' height='100'/> \
 		<hr align='center' size='1'/> \
-		<strong>Enable Viacam &mdash; v#APPVERSION#</strong><br> \
+		<strong>Enable Viacam &mdash; v#APPVERSION# - PM Edition</strong><br> \
 	"));
 	page.Append(_("A webcam based mouse emulator"));
 	page.Append(_T("<p>"));
