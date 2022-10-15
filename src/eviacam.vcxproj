@@ -504,7 +504,7 @@ if %ERRORLEVEL% LEQ 1 exit 0
       <AdditionalDependencies>wxmsw30u_richtext.lib;wxmsw30u_aui.lib;wxmsw30u_core.lib;wxbase30u.lib;wxtiff.lib;wxjpeg.lib;wxpng.lib;wxzlib.lib;wxregexu.lib;wxmsw30u_adv.lib;wxmsw30u_html.lib;wxmsw30u_xrc.lib;wxbase30u_net.lib;wxbase30u_xml.lib;opencv_core2411.lib;opencv_objdetect2411.lib;opencv_highgui2411.lib;opencv_imgproc2411.lib;opencv_video2411.lib;wxexpat.lib;comctl32.lib;rpcrt4.lib;winmm.lib;simplelog.lib;wxcamwindow.lib;wxutil.lib;strmiids.lib;uuid.lib;quartz.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)eviacam.exe</OutputFile>
       <AdditionalLibraryDirectories>$(CVPATH)\build\x86\vc12\lib;$(WXWIN)\lib\vc_lib;$(DSHOW_SAMPLES)\baseclasses\$(Configuration);$(SolutionDir)$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
       <UACUIAccess>false</UACUIAccess>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -622,6 +622,9 @@ if not exist $(TargetDir)msvcr120.dll copy "$(VCInstallDir)redist\x86\Microsoft.
       <Project>{ef4cba03-871c-48ce-998d-66f326b8a99a}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="eviacam.exe.manifest" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -22,4 +22,7 @@
  */
 appicon ICON   "resources/eviacam.ico"
 
+#define MANIFEST_RESOURCE_ID 1
+MANIFEST_RESOURCE_ID RT_MANIFEST "eviacam.exe.manifest"
+
 #include "wx/msw/wx.rc"
