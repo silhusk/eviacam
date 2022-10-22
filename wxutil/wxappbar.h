@@ -116,7 +116,6 @@ private:
 	wxTimer m_timer;
 	bool m_firstTime;
 	bool m_warnBarOverlap;
-	wxDialog* m_pDialog;		
 };
 
 #endif
